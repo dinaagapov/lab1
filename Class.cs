@@ -8,8 +8,22 @@ namespace Hello_world
     class Cat
     {
         private bool isEating;
-        //private int _numLives;
-        public int numLives;//However, the user asked the number of lives to be between 0 and 7!
+        private int _numLives;
+        pubic int numLives
+        {
+            get
+            {
+                return _numLives;
+            }
+            set
+            {
+                if(value <=8000 && value >= 1)
+                {
+                    _numLives = value;
+                }
+            }
+        }
+
         public string Name;
         // Member Functions (methods) 
         public Cat() //constructor 
