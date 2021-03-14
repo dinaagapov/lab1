@@ -17,7 +17,7 @@ namespace Hello_world
             }
             set
             {
-                if(value <=25 && value >= 1)
+                if(value <=8000 && value >= 1)
                 {
                     _numLives = value;
                 }
